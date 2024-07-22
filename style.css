@@ -776,6 +776,21 @@ body::-webkit-scrollbar-thumb {
     color:#4AD7FF;
 }
 .anim{
-    width:50vw;
+    width:43vw;
     margin-top:30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.scenes{
+    display: flex;
+    flex-wrap: wrap;
+    width:1500px;
+    gap:10px;
+}
+.scenes>img{
+    width:325px;
+}
+.scenedemo{
+    display: flex;
+    flex-wrap: wrap;
 }
