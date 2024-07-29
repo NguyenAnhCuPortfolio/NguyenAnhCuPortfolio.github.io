@@ -1,110 +1,3 @@
-.prompt-thin {
-    font-family: "Prompt", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.prompt-extralight {
-    font-family: "Prompt", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.prompt-light {
-    font-family: "Prompt", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.prompt-regular {
-    font-family: "Prompt", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.prompt-medium {
-    font-family: "Prompt", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.prompt-semibold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.prompt-bold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.prompt-extrabold {
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.prompt-black {
-    font-family: "Prompt", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.prompt-thin-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.prompt-extralight-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.prompt-light-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.prompt-regular-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.prompt-medium-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.prompt-semibold-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.prompt-bold-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.prompt-extrabold-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-}
-
-.prompt-black-italic {
-    font-family: "Prompt", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
 
 body {
     background-color: black;
@@ -118,8 +11,23 @@ body {
 }
 
 .HOME {
+    top:0;
     display: flex;
     font-family: Prompt;
+    height:100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: -100;
+    object-fit: cover;
+    perspective: -10px;
+    position: fixed;
+    margin-left: 100px;
+   
+}
+.body1{
+    margin-top: 1000px;
+    background-color: black;
+    transform: translateZ(-10px) scale();
 }
 
 .navlist {
@@ -130,7 +38,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 30%;
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .navlist>p:hover {
@@ -142,8 +50,8 @@ body {
     width: 50%;
     height: auto;
     z-index: -1;
-    margin-top: 120px;
-    left: -10px;
+    margin-top: 60px;
+    left: -30px;
 
 
 }
@@ -159,7 +67,7 @@ body {
 
 .status {
     color: gray;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     margin-top: 150px
 }
@@ -183,8 +91,8 @@ body {
 .underavatar {
     width: 35%;
     height: 100%;
-    z-index: -1;
-    margin-top: 80px;
+    z-index: -10;
+    margin-top: 30px;
 
 }
 
@@ -197,9 +105,10 @@ body {
 
 .avatar {
     width: auto;
-    height: 100%;
-    z-index: 0;
-    margin-top: 130px;
+    height: 90%;
+    z-index: -2;
+    margin-top: 70px;
+    margin-right: 40px;
 
 }
 
@@ -208,7 +117,7 @@ body {
     border-radius: 40px;
     color: white;
     padding: 10px 40px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-right: 12px;
     font-family: Prompt;
     font-weight: 600;
@@ -237,20 +146,17 @@ body {
     }
 }
 
-.aboutbg {
-    width: 100%;
-    margin-top: 106px;
-    z-index: -10;
-    position: absolute;
-}
-
 .aboutcontentup {
     display: flex;
     z-index: 0;
-    margin-top: 170px;
+    margin-top: 100px;
     color: black;
     font-family: Prompt;
     gap: 5%;
+    background-color: white;
+    width:100vw;
+    padding:30px 100px;
+    border-radius: 40px 40px 0 0;
 }
 
 .aboutcontentleft>h4 {
@@ -341,7 +247,10 @@ body {
     grid-column-gap: 5px;
     height: 200px !important;
     grid-row-gap: 10px;
-    margin-top: 80px;
+    padding:30px 100px;
+    padding-bottom: 350px;
+    width: 100vw;
+    background-color: #58BCF1;
 }
 
 .aboutright {
@@ -418,7 +327,7 @@ body {
 }
 
 .nav2 {
-    margin-top: 180px;
+    margin-top: 100px;
     justify-content: space-between;
     font-size: 18px;
     font-family: Prompt;
@@ -453,16 +362,8 @@ body {
 .col1 {
     background: radial-gradient(circle, rgba(197, 197, 197, 1) 5%, rgba(196, 196, 196, 1) 20%, rgba(139, 139, 139, 1) 95%);
     width: 45%;
-    height: 50%;
     padding: 10px 20px;
     border-radius: 40px;
-}
-
-.col1>img {
-    height: auto;
-    width: 57%;
-    padding: 20px;
-
 }
 
 .col2 {
@@ -472,15 +373,7 @@ body {
     width: auto;
     height: 30%;
     justify-content: center;
-    padding: 10px 15px;
-
-}
-
-.col2>img {
-    width: 45%;
-    height: auto;
-    padding: 10px 10px;
-
+    padding: 10px 20px;
 }
 
 
@@ -727,7 +620,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .uchiheader>h4 {
@@ -762,35 +655,187 @@ body::-webkit-scrollbar-thumb {
     margin-left: 5%;
     margin-right: 5%;
 }
-.mv{
+
+.mv {
     margin-left: 5%;
-    margin-top:30px;
+    margin-top: 30px;
 }
-.mv>p{
+
+.mv>p {
     font-size: 14px;
     font-family: Prompt;
 }
-.mv>h4{
+
+.mv>h4 {
     font-size: 20px;
     font-family: Prompt;
-    color:#4AD7FF;
+    color: #4AD7FF;
 }
-.anim{
-    width:43vw;
-    margin-top:30px;
+
+.anim {
+    width: 43vw;
+    margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 10px;
 }
-.scenes{
+
+.scenes {
     display: flex;
     flex-wrap: wrap;
-    width:1500px;
-    gap:10px;
+    width: 1500px;
+    gap: 10px;
 }
-.scenes>img{
-    width:325px;
+
+.scenes>img {
+    width: 325px;
 }
-.scenedemo{
+
+.scenedemo {
     display: flex;
     flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flexbox;
+    gap:20%;
+    width: 95%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 430px;
+    margin-top: 2rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    from {
+        left: -150%;
+    }
+}
+
+.item {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: max(calc(100% * 5), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    height: 100%;
+    width: auto;
+    animation-delay: 0s;
+
+}
+
+.item2 {
+    height: 100%;
+    width: auto;    
+    animation-delay: 2s;
+
+}
+
+.item3 {
+    height: 100%;
+    width: auto;
+    animation-delay: 4s;
+
+}
+
+.item4 {
+    height: 100%;
+    width: auto;
+    animation-delay: 5s;
+
+}
+
+.item5 {
+    height: 100%;
+    width: auto;
+    animation-delay: 8s;
+
+}
+
+
+.wrapper1 {
+    width: 350px;
+    max-width: 1200px;
+    margin-inline: auto;
+    position: relative;
+    height: 450px;
+    margin-top: 2rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    from {
+        left: -100%;
+    }
+}@keyframes scrollTop {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-200%);
+    }
+}
+
+
+.items {
+    width: 100%;
+    height: auto;
+    animation-name: scrollTop;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.items:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.items:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.items:nth-child(3) {
+    animation-delay: 2.5s;
+}
+
+.items:nth-child(4) {
+    animation-delay: 7.5s;
+}
+.item6 {
+    height: 100%;
+    width: auto;
+
+}
+
+.item7 {
+    height: 100%;
+    width: auto;    
+
+}
+
+.item8 {
+    height: 100%;
+    width: auto;
+}
+
+.item9 {
+    height: 100%;
+    width: auto;
+    animation-delay: 5s;
 }
