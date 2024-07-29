@@ -419,7 +419,7 @@ body {
 
 .contract {
     display: flex;
-    gap: 20%;
+    gap: 10%;
 }
 
 .contracttitle {
@@ -427,12 +427,12 @@ body {
     src: url('Orbitron-VariableFont_wght.ttf');
     align-self: flex-start !important;
     margin-left: 70px;
-    font-size: 60px;
+    font-size: 46px;
     margin-top: 40px;
 }
 
 .tetleft>img {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-left: 100px;
 }
@@ -545,46 +545,108 @@ body::-webkit-scrollbar-thumb {
     margin-left: 160px;
 
 }
+.tea{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height:50vh;
+}
 
 .teabox {
     display: flex;
-    margin-left: 100px;
-    margin-top: 100px;
     position: relative;
     z-index: 1;
+    width: 100vw;
+    height:auto;
 }
-
-.teaimg {
+.blacktea{
+    position: relative;
     width: 80%;
     height: auto;
+
+}
+.blacktea>img{
+    width: 60%;
+    height: auto;
     z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    transform: translateY(-20%);
+
+}
+.traden:hover{
+    opacity:0;
+}
+.traden{
+    transition: 1s;
+}
+.artichoketea{
+    position: relative;
+    width: 80%;
+    height: auto;
+
+}
+.artichoketea>img{
+    width: 60%;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    transform: translateY(-20%);
+
+}
+.traatiso:hover{
+    opacity:0;
+}
+.traatiso{
+    transition: 1s;
+}
+.oolongtea{
+    position: relative;
+    width: 80%;
+    height: auto;
+    
+
+}
+.oolongtea>img{
+    width: 60%;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    object-fit: cover;
+    transform: translateY(-20%);
+
+}
+.traolong:hover{
+    opacity:0;
+}
+.traolong{
+    transition: 1s;
 }
 
-.teabgcontainer {
+.teabg{
     display: flex;
-    max-width: 85vw;
+    max-width: 100vw;
     z-index: 0;
     position: absolute;
-    transform: translate(-3%, -50%);
     gap: 10%;
-}
-
-.teabag {
-    position: relative;
-    width: 40%;
-    height: auto;
 }
 
 .teabag>img {
     width: 200%;
     height: auto;
+    padding-right: 30%;
+    transform: translateX(-30%);
 }
 
 .mangchua {
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .mangchuatitle {
+    margin-bottom: 20px;
     font-family: Orbitron;
     src: url('Orbitron-VariableFont_wght.ttf');
     align-self: flex-start !important;
