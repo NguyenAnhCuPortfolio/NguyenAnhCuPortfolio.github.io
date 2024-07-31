@@ -499,7 +499,7 @@ body {
 
 .contract {
     display: flex;
-    gap: 10%;
+    gap: 5%;
 }
 
 .contracttitle {
@@ -515,6 +515,11 @@ body {
     width: 80%;
     height: auto;
     margin-left: 100px;
+}
+.chocoleft>img {
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
 }
 
 .tetright {
@@ -533,6 +538,14 @@ body {
 
 .tetright>h5 {
     color: #FFDA89;
+    font-family: Orbitron;
+    src: url('Orbitron-VariableFont_wght.ttf');
+    align-self: flex-start !important;
+    font-size: 28px;
+}
+.chocoright>h5 {
+    margin-top: 50px;
+    color: white;
     font-family: Orbitron;
     src: url('Orbitron-VariableFont_wght.ttf');
     align-self: flex-start !important;
@@ -996,7 +1009,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
 }
 .choco{
-    margin-top: 10%;
+    margin-top: 50px;
 }
 .choco>h4 {
     font-family: Orbitron;
@@ -1004,12 +1017,4 @@ body::-webkit-scrollbar-thumb {
     align-self: flex-start !important;
     font-size: 50px;
     margin-top: 50px;
-}
-.chocoshowcase{
-    display: flex;
-    margin-top: 50px;
-}
-.chocoshowcase>img{
-    width:50%;
-    height:auto;
 }
