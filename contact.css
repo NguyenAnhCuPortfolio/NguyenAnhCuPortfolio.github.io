@@ -1,0 +1,72 @@
+.text {
+  font-size: 150px;
+  width: 0.8em;
+}
+#card {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+#infoGrid {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 90vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 9px;
+}
+.info {
+  border-radius: 50px 50px 50px 50px;
+}
+#name {
+  background: #f0f1fd;
+  grid-area: 1 / 1 / 2 / 2;
+}
+#email {
+  background: #fdf0f0;
+  grid-area: 1 / 2 / 2 / 3;
+}
+#subject {
+  background: #f0f1fd;
+  grid-area: 1 / 3 / 2 / 4;
+}
+#submit {
+  background: rgb(255, 237, 237);
+  background: radial-gradient(
+    circle,
+    rgba(255, 237, 237, 1) 16%,
+    rgba(204, 220, 253, 1) 53%,
+    rgba(190, 196, 253, 1) 85%
+  );
+  grid-area: 1 / 4 / 6 / 5;
+}
+#message {
+  background: #f0f1fd;
+  grid-area: 2 / 1 / 6 / 4;
+}
+#Container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+#titleHolder {
+  height: 20%;
+  top: 25%;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+  display: flex;
+}
+.contactMe {
+  height: 400vh;
+  width: 100vw;
+  margin-bottom: 200vh;
+  margin-top: 50vh;
+}
