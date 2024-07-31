@@ -3,6 +3,88 @@ body {
     background-color: black;
     color: white;
 }
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loadingdot{
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom: 10%;
+  }
+  
+  @keyframes scaling{
+    0%, 100%{
+      transform: scale(0.2);
+      background-color: #FFDA89;
+    }
+    40%{
+      transform: scale(1);
+      background-color: #07DEFF;
+    }
+    50%{
+      transform: scale(1);
+      background-color: #4AD7FF;
+    }
+  }
+  
+  .loadingdot>div {
+      height: 40px;
+      width: 40px;
+      border-radius:50%;
+      transform: scale(0);
+      animation: scaling 2.5s ease-in-out infinite;
+      display: inline-block;
+      margin:.5rem;
+  }
+  
+  div:nth-child(0){
+    animation-delay:0s;
+  }
+  div:nth-child(1){
+    animation-delay:0.2s;
+  }
+  div:nth-child(2){
+    animation-delay:0.4s;
+  }
+  div:nth-child(3){
+    animation-delay:0.6s;
+  }
+  div:nth-child(4){
+    animation-delay:0.8s;
+  }
+  div:nth-child(5){
+    animation-delay:1s;
+  }
+.popup{
+    background-color: white;
+    opacity: 90%;
+    width:450px;
+    padding: 0px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    border-radius: 40px;
+    font-family: Prompt;
+    text-align: center;
+}
+#loading{
+    color:#4AD7FF;
+
+}
+.popup>button{
+    display: block;
+    margin: 0 0 10px auto;
+    background-color: transparent;
+    font-size: 50px;
+    color: #FFDA89;
+    border: none;
+
+}
 
 .left {
     display: flex;
@@ -181,8 +263,7 @@ body {
     font-weight: 200;
     font-style: normal;
 }
-
-.aboutcontentmiddle>button {
+.aboutcontentmiddle>a>button {
     background-color: black;
     color: #FFDA89;
     border-radius: 10px;
@@ -191,13 +272,12 @@ body {
     font-weight: 400;
 }
 
-.aboutcontentmiddle>button:hover {
+.aboutcontentmiddle>a>button:hover {
     color: #58BCF1;
     animation-name: bounce;
     animation-duration: 4s;
     animation-timing-function: linear;
 }
-
 .aboutcontentright {
     display: flex;
     flex-direction: column;
