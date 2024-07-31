@@ -6,8 +6,8 @@ var appendTarget = document.getElementById("titleHolder");
 text.forEach(function (c, index) {
     var element = document.createElement("p");
     element.textContent = c;
-    element.setAttribute("class", text ${ index % 2 === 0 ? "zero" : "one"});
-appendTarget.appendChild(element);
+    element.setAttribute("class", `text ${index % 2 === 0 ? "zero" : "one"}`);
+    appendTarget.appendChild(element);
 });
 
 let master = gsap.timeline({

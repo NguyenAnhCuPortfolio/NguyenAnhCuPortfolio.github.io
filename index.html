@@ -19,24 +19,39 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./contact.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
     <link
         href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollSmoother.min.js"></script>
-
+    <link rel="stylesheet" href="./contact.css">
 
     <meta charset="utf-8">
     <title>NGUYEN ANH CU PORTFOLIO</title>
 
 </head>
+<div class="popup">
+    <button id="close">&times;</button>
+    <section class="loadingdot">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <h3 id="loading">Loading might take long</h3>
+    <h3>...</h3>
+</div>
+<script src="script.js"></script>
 
 <body class="body">
+
+
     <!-- home -->
     <div class="HOME container col-lg-12">
         <section class="left col-lg-6">
@@ -81,7 +96,8 @@
                 </div>
                 <div class="aboutcontentmiddle">
                     <p>I excel best in transforming inspiration to concepts and drawing concepts to artworks.</p>
-                    <button>DOWNLOAD CV</button>
+                    <a href="https://drive.google.com/file/d/1L-F4IY8GC8y1029vqjy_ufIl0XczeDSd/view?usp=sharing"><button>DOWNLOAD
+                            CV</button></a>
                 </div>
                 <div class="aboutcontentright">
                     <p>A highly creative and innovative designer, aspiring to specialize in illustration while
@@ -263,7 +279,7 @@
             <h4>Lúc thấy lúc không- Hoàng Thùy Linh- Animatic video</h4>
             <p>See full video here:<a href="https://youtu.be/D6-WG_-Knr0"> https://youtu.be/D6-WG_-Knr0</a></p>
             <section class="scenedemo">
-                <img class="anim" src="INDEX_IMG/scene1.png">
+                <img class="anim" src="INDEX_IMG/animatic.gif">
                 <img class="anim" src="INDEX_IMG/scene1_1.png">
                 <div class="scenes">
                     <img src="INDEX_IMG/scene2.jpg">
@@ -281,6 +297,12 @@
             </div>
             <div id="infoContainer">
                 <div id="card">
+                    <section class="myinfo">
+                    <p>NGUYEN ANH CU</p>
+                    <p>(+84)386 812 170</p>
+                    <p>NGUYENANHCU2004@GMAIL.COM</p>
+                    <p>HO CHI MINH CITY,VIETNAM</p>
+                    </section>
                     <svg width="393" height="240" viewBox="0 0 393 240" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="393" height="240" rx="40" fill="url(#paint0_radial_148_44)" />
                         <defs>
@@ -294,11 +316,13 @@
                     </svg>
                 </div>
                 <div id="infoGrid">
-                    <div class="info" id="name">n</div>
-                    <div class="info" id="email">e</div>
-                    <div class="info" id="subject">s</div>
-                    <div class="info" id="message">m</div>
-                    <div class="info" id="submit"></div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <input type="text" class="info" id="email" placeholder="E-mail">
+                    <input type="text" class="info" id="subject" placeholder="Subject">
+                    <input type="text" class="info" id="message" placeholder="Message">
+                    <div id="submit"><button id="submitbutton"><i class="fa-regular fa-paper-plane"></i>Send</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -308,6 +332,7 @@
         gsap.registerPlugin(ScrollTrigger);
 
     </script>
+
 </body>
 
 </html>
