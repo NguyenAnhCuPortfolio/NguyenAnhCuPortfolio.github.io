@@ -4,6 +4,8 @@
 .text {
   font-size: 150px;
   width: 0.8em;
+  color: white;
+  font-family: Optien;
 }
 #card {
   position: fixed;
