@@ -995,3 +995,21 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     width: auto;
 }
+.choco{
+    margin-top: 10%;
+}
+.choco>h4 {
+    font-family: Orbitron;
+    src: url('Orbitron-VariableFont_wght.ttf');
+    align-self: flex-start !important;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.chocoshowcase{
+    display: flex;
+    margin-top: 50px;
+}
+.chocoshowcase>img{
+    width:50%;
+    height:auto;
+}

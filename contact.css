@@ -40,7 +40,10 @@
   grid-row-gap: 9px;
 }
 .info {
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 60px;
+}
+.info-m{
+  border-radius: 40px;
 }
 #name {
   background: #f0f1fd;
@@ -74,6 +77,9 @@
   background-color: transparent;
   border: none;
 }
+#submitbutton :hover{
+  color:white;
+}
 #message {
   background: #f0f1fd;
   grid-area: 2 / 1 / 6 / 4;
@@ -104,4 +110,14 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
+}
+textarea[type=text] {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+}
+.fa-paper-plane{
+  margin-right: 10px;
 }
