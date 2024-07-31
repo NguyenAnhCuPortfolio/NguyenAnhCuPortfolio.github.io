@@ -90,6 +90,7 @@
   position: fixed;
   transform: translateX(-50%);
   display: flex;
+  pointer-events: none;
 }
 .contactMe {
   height: 400vh;
