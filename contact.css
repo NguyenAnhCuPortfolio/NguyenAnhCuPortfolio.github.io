@@ -52,7 +52,7 @@
   border-radius: 40px;
 }
 #email {
-  background: #fdf0f0;
+  background: #f0f1fd;
   grid-area: 1 / 2 / 2 / 3;
 }
 #subject {
